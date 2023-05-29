@@ -48,10 +48,11 @@ Each message that user send to the chat room will be delivered to every particip
 $ meson setup build
 $ meson compile -C build
 $ ./build/async_server_rooms  # - run application.
+```
 
 ### In Docker
-
 ```
+
 $ docker build -t rooms-server .
 $ docker run -p 8000:8000 -t rooms-server
 ```
