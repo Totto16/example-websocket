@@ -32,17 +32,11 @@ See more:
 
 ## Build and Run
 
-### Using CMake
-
-**Requires:** [oatpp](https://github.com/oatpp/oatpp), and [oatpp-websocket](https://github.com/oatpp/oatpp-websocket) 
-modules installed. You may run `utility/install-oatpp-modules.sh` 
-script to install required oatpp modules.
-
-After all dependencies satisfied:
+### Using Meson
 
 ```
-$ mkdir build && cd build
-$ cmake ..
-$ make 
-$ ./async-websocket-server-exe       # - run application.
+$ meson setup build
+$ meson compile -C build
+$ ./build/async_websocket_server  # - run application.
+
 ```
