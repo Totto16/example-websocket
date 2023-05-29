@@ -49,7 +49,7 @@ deps += dependency(
 subdir('src')
 
 lib_oatpp_websocket = library(
-    'oatpp-swagger',
+    'oatpp-websocket',
     src_files,
     dependencies: deps,
     include_directories: inc_dirs,

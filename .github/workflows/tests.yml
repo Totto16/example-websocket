@@ -39,7 +39,11 @@ jobs:
                   meson setup build -Dbuildtype=release -Dtests=true
 
             - name: Build
-              run: meson compile -C build
+              run: |
+                  cd ${{ matrix.config.folder }}
+                  meson compile -C build
 
             - name: Test
-              run: meson test -C build
+              run: |
+                  cd ${{ matrix.config.folder }}
+                  meson test -C build
